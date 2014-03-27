@@ -1,0 +1,285 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*???????????????????????????????*/
+
+/** { 
+  outline: 1px dashed black;
+}*/
+
+
+body, html {
+/*	min-width: 880px;
+*/	height: 100%;
+
+/*	margin: 0 auto;
+*/}
+
+body {
+       margin: 0px;
+       padding: 0px;
+       min-width: 800px;
+       font: 13px/27px Arial,sans-serif;
+
+}
+
+.container {
+/*	min-height: 100%;
+	margin: 0 auto;*/
+
+	min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0px 0px -40px 0px;
+}
+
+.wrapper {
+       padding: 0px 0px 40px 0px;
+ }
+
+a {
+	display: table-cell;
+	vertical-align: middle;	
+}
+
+.account {
+	float: right;
+}
+
+.account.li {
+
+}
+
+.main {
+	clear: both;
+	text-align: center;
+}
+
+
+/* STYLES */
+
+/*header*/
+
+.account {
+	margin-top: 13px;
+	margin-right: 10px;
+}
+
+.account a {
+    color: #3A4040;
+    font-size: 1em;
+    margin-right: 13px;
+    text-decoration: none;
+}
+
+.account a:hover {
+    text-decoration: underline;
+}
+
+/*#signinimg:hover > .overlay {
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#000;
+    opacity:0.5;
+    border-radius:30px;
+}*/
+
+#signinimg  a:hover{
+    opacity:.5;
+}
+
+li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 13px;
+}
+
+a img {
+	height: 23px;
+    vertical-align: middle;
+}
+
+li input {
+	border: 1px solid #4285f4;
+	font-weight: bold;
+	outline: none;
+	background: #4285f4;
+	background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    /*background-image: linear-gradient(#267DFF 0%, #136DE3 100%);
+border-radius: 1px;*/
+	color: #fff;
+	font-size: 13px;
+	padding: 6px 12px 6px 12px;
+	font-family: arial, sans-serif;
+	border-radius: 2px;
+}
+
+/*center*/
+
+img.logo {
+/*	width: 269px;
+*/	height: 100px;
+	padding-top: 112px;
+	padding-bottom: 15px;
+}
+
+.searcher {
+	background: url("images/microphone.png") no-repeat right;
+	background-size: 22px;
+	border: 1px solid #cdcdcd;
+	display: block;
+	height: 29px;
+	margin: auto;
+	width: 550px;
+}
+
+.searcher:hover {
+	border-color: #a9a9a9;
+}
+
+.searcher:focus {
+    border-color: #5E95D8;
+    outline: none !important;
+    font: 15px arial,sans-serif;
+
+}
+
+.submit-button input {
+	border: 1px solid #dcdcdc;
+/*border-color: rgba(0,0,0,0.1);
+color: #444!important;*/
+	font-size: 12px;
+	background: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	font: bold 11px/20px Arial,sans-serif!important;
+
+	height: 29px;
+    line-height: 29px;
+    min-width: 54px;
+    padding: 0 8px;
+    text-align: center;
+    background: -moz-linear-gradient(center top , #F5F5F5, #F1F1F1) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.submit-button input:hover {
+	border-color: #c6c6c6;
+
+}
+
+.submit-button input:focus {
+    border-color: #5E95D8;
+    outline: none !important;
+}
+
+.searcher:focus {
+    border-color: #5E95D8;
+    outline: none !important;
+    font: 15px arial,sans-serif;
+
+}
+
+#google-search {
+	margin-right: 10px;
+}
+
+#search {
+	margin-bottom: 40px;
+}
+.submit-button {
+	margin: 15px;
+}
+
+/*?????????footer?????????*/
+
+#leftfoot {
+	float: left;
+	margin-left: 30px;
+}
+
+
+#leftfoot li {
+	margin-right: 30px;
+}
+
+#rightfoot {
+	float: right;
+	margin-right: 20px;
+}
+
+#rightfoot li {
+	margin-left: 12px;
+}
+
+footer {
+	height: 45px;
+	background: #f2f2f2;
+	border-top: 1px solid #e4e4e4;
+	line-height: 40px;
+	min-width: 800px;
+/*
+	position:absolute;
+	bottom:10px;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;*/
+}
+
+footer a {
+	font-size: small;
+	text-decoration: none;
+	color: #666;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
